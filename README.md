@@ -53,7 +53,7 @@ In AI projects, this is critical for:
 
 ---
 
-### 3️⃣ Cloud Basics
+###  3️⃣Cloud Basics
 
 Cloud computing allows AI models to be trained on powerful remote machines.
 
@@ -75,3 +75,48 @@ Now I understand the importance of environment isolation, version control, and s
 ---
 
 More updates coming daily.
+##   How All Three Work Together in Real AI Workflow
+
+Let’s connect everything clearly:
+
+---------Step 1️⃣  — You create project locally-----------
+
+
+*Create virtual environment
+
+*Install scikit-learn
+
+*Write training script
+
+--------Step 2️⃣  — Use Git-----------------------
+
+*Commit code
+
+*Push to GitHub
+
+-----------Step 3️⃣ — Use Azure ML--------------
+
+*Azure pulls code
+
+*Creates cloud environment
+
+*Trains model on GPU compute
+
+*Saves model in cloud storage
+
+### Real Industry Flow
+
+AI Engineer workflow:
+
+Create isolated environment
+
+Develop model
+
+Track experiments with Git
+
+Push to cloud
+
+Train at scale
+
+Deploy API endpoint
+
