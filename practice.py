@@ -79,4 +79,52 @@ sns.heatmap(correlation_matrix, cmap='coolwarm')
 plt.title('Correlation Heatmap', fontsize=14, fontweight='bold')
 plt.tight_layout()
 plt.show()
+# ================================
+# 5️⃣ Supervised Learning Section
+# ================================
+
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+
+# 1️⃣ Select Features (X) and Target (y)
+# Let's use some numeric features for simplicity
+features = ['LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'TotRmsAbvGrd', 'BedroomAbvGr']
+X = df[features]
+y = df['SalePrice']
+
+print("\nFeatures (X):")
+print(X.head())
+print("\nTarget (y):")
+print(y.head())
+
+# 2️⃣ Split Data into Train/Test sets
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+print(f"\nTraining samples: {len(X_train)}, Testing samples: {len(X_test)}")
+
+# 3️⃣ Initialize Linear Regression Model
+model = LinearRegression()
+
+# 4️⃣ Train the Model
+model.fit(X_train, y_train)
+print("\nModel trained successfully!")
+
+# 5️⃣ Make Predictions
+preds = model.predict(X_test)
+
+# 6️⃣ Evaluate Model
+mse = mean_squared_error(y_test, preds)
+r2 = r2_score(y_test, preds)
+
+print(f"\nMean Squared Error (MSE): {mse:,.2f}")
+print(f"R2 Score: {r2:.2f}")
+
+# 7️⃣ Optional: Compare Actual vs Predicted (first 10)
+comparison = pd.DataFrame({"Actual": y_test[:10], "Predicted": preds[:10]})
+print("\nActual vs Predicted (first 10 samples):")
+print(comparison)
+
 
