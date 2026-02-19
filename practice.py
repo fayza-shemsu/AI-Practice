@@ -1,6 +1,8 @@
+
 import pandas as pd
 import os
-
+import matplotlib.pyplot as plt
+import seaborn as sns
 # Check current directory
 print("Working directory:", os.getcwd())
 
@@ -67,3 +69,14 @@ plt.xlabel('Lot Frontage (feet)')
 plt.ylabel('Sale Price ($)')
 plt.tight_layout()
 plt.show()
+# 4. Correlation Heatmap
+plt.figure(figsize=(12, 8))
+
+correlation_matrix = df.corr(numeric_only=True)
+
+sns.heatmap(correlation_matrix, cmap='coolwarm')
+
+plt.title('Correlation Heatmap', fontsize=14, fontweight='bold')
+plt.tight_layout()
+plt.show()
+
