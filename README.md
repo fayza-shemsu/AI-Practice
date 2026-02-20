@@ -1,7 +1,12 @@
-Tuesday - Data Wrangling with Pandas
+## Tuesday: Data Wrangling with Pandas
+- Loaded train.csv
+- Checked for missing values and filled them (mean for numeric, mode for categorical)
+- Filtered houses with more than 3 bedrooms
+- Created `pandas_tasks.py`
 
-- Learned difference between DataFrame and Series
-- Handled missing values: numeric (mean), categorical (mode)
-- Filtered DataFrame using conditions (>3 bedrooms)
-- Practiced pd.read_csv, df.isnull(), df.fillna(), filtering
-- Gained hands-on with Pandas methods and debugging FutureWarnings
+## Wednesday: Data Storytelling (Visualization)
+- Used Seaborn and Matplotlib to analyze `SalePrice`
+- Plotted correlation heatmap to see which features are related to price
+- Plotted distribution histogram of SalePrice
+- Identified outliers using boxplots
+- Created `visualization.py`
