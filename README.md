@@ -1,23 +1,7 @@
-# Azure AI Intern Journey 🚀
+Tuesday - Data Wrangling with Pandas
 
-This repository documents my 12-week AI Engineer Internship focused on Azure Machine Learning and Cloud-based AI systems.
-
-## 🎯 Objective
-
-To build strong foundations in:
-- Virtual Environments & Dependency Management
-- Git & Version Control
-- Cloud Computing Fundamentals
-- Azure Machine Learning
-- Model Training & Deployment
-- MLOps Concepts
-
-
-
-
-Train at scale
-
-Deploy API endpoint
-
-
-
+- Learned difference between DataFrame and Series
+- Handled missing values: numeric (mean), categorical (mode)
+- Filtered DataFrame using conditions (>3 bedrooms)
+- Practiced pd.read_csv, df.isnull(), df.fillna(), filtering
+- Gained hands-on with Pandas methods and debugging FutureWarnings
