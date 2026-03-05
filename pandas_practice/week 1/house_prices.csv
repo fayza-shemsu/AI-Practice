@@ -1,0 +1,11 @@
+Price,Bedrooms,Location,Size
+250000,3,Addis Ababa,120
+320000,4,Addis Ababa,150
+NaN,5,Bahir Dar,200
+180000,2,Adama,90
+400000,4,Addis Ababa,180
+NaN,3,Adama,NaN
+275000,4,Dire Dawa,140
+310000,5,,160
+220000,3,Bahir Dar,110
+NaN,6,Addis Ababa,210

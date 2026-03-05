@@ -1,52 +1,45 @@
-# Import necessary libraries
+# train.py
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
 
-# Load dataset  
-df = pd.read_csv("customer_churn.csv")
+# 1️⃣ Load the dataset
+# Make sure the CSV is in the correct folder (relative path)
+df = pd.read_csv("data/customer_churn.csv")  # replace with your path if needed
 
-# Features and target
-X = df.drop("Churn", axis=1)
-y = df["Churn"]
+# 2️⃣ Separate features and target
+X = df.drop("Target", axis=1)  # all columns except target
+y = df["Target"]               # Target: 1=Left, 0=Stayed
 
-# Identify categorical and numerical columns
-categorical_cols = X.select_dtypes(include=["object", "category"]).columns
-numerical_cols = X.select_dtypes(include=["int64", "float64"]).columns
-
-# Preprocessing pipeline
-preprocessor = ColumnTransformer(
-    transformers=[
-        ("num", StandardScaler(), numerical_cols),
-        ("cat", OneHotEncoder(drop='first'), categorical_cols)
-    ]
+# 3️⃣ Split data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
 )
 
-# Build pipeline with Logistic Regression
-pipeline = Pipeline(steps=[
-    ("preprocessor", preprocessor),
-    ("classifier", LogisticRegression(solver='liblinear'))
-])
+# 4️⃣ Train Logistic Regression
+log_model = LogisticRegression(max_iter=1000)
+log_model.fit(X_train, y_train)
 
-# Split dataset
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+# 5️⃣ Make predictions
+y_pred = log_model.predict(X_test)
 
-# Train the model
-pipeline.fit(X_train, y_train)
+# 6️⃣ Generate Confusion Matrix
+cm = confusion_matrix(y_test, y_pred)
 
-# Predict
-y_pred = pipeline.predict(X_test)
+# Display the confusion matrix
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=[0,1])
+disp.plot(cmap='Blues')
+plt.title("Confusion Matrix")
+plt.show()
 
-# Confusion Matrix
-cm = confusion_matrix(y_test, y_pred, labels=[1, 0])  # [1,0] so rows: Left, Stayed
-disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["Left", "Stayed"])
-disp.plot()
+# 7️⃣ Print number of False Positives
+FP = cm[0,1]
+print(f"Number of False Positives: {FP}")
 
-# Inspect False Positives
-# False Positives: Predicted Left (1) but actually Stayed (0)
-FP = cm[0, 1]
-print(f"False Positives (Predicted Left but Stayed): {FP}")
+# 8️⃣ Optional: Print Training and Testing Accuracy
+train_acc = log_model.score(X_train, y_train)
+test_acc = log_model.score(X_test, y_test)
+print(f"Training Accuracy: {train_acc:.4f}")
+print(f"Testing Accuracy: {test_acc:.4f}")
