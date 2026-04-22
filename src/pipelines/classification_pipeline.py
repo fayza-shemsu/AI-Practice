@@ -8,6 +8,8 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
 
 from src.data.load_data import load_data
 
@@ -17,7 +19,9 @@ def run_classification_pipeline(data_path):
     # 1. LOAD DATA
     df = load_data(data_path)
     print(df["Churn"].unique())
-
+    df = df.drop("CustomerID", axis=1)
+    print(df.isnull().sum())
+    print(df.duplicated().sum())
 
     # 3. SPLIT FEATURES / TARGET
     X = df.drop('Churn', axis=1)
@@ -38,8 +42,11 @@ def run_classification_pipeline(data_path):
     # 6. FULL PIPELINE
     pipeline = Pipeline(steps=[
         ("preprocessing", preprocessor),
-        ("model", LogisticRegression(max_iter=1000))
-    ])
+("model", RandomForestClassifier(
+    n_estimators=100,
+    max_depth=None,
+    random_state=42
+))    ])
 
     # 7. TRAIN TEST SPLIT
     X_train, X_test, y_train, y_test = train_test_split(
@@ -48,18 +55,32 @@ def run_classification_pipeline(data_path):
 
     # 8. TRAIN
     pipeline.fit(X_train, y_train)
+    
+        # 9. PREDICT WITH PROBABILITY
+    probs = pipeline.predict_proba(X_test)[:, 1]
 
-    # 9. PREDICT
-    preds = pipeline.predict(X_test)
+    # LOWER THRESHOLD TO REDUCE FN
+    threshold = 0.3
+    preds = (probs > threshold).astype(int)
+    
+     # 10. OVERFITTING CHECK
+    train_preds = pipeline.predict(X_train)
+    test_preds = pipeline.predict(X_test)
 
-    # 10. EVALUATE
+    train_acc = accuracy_score(y_train, train_preds)
+    test_acc = accuracy_score(y_test, test_preds)
+
+    print(f"Train Accuracy: {train_acc}")
+    print(f"Test Accuracy: {test_acc}")
+
+    # 11. EVALUATE
     print("Confusion Matrix:")
     print(confusion_matrix(y_test, preds))
 
     print("\nClassification Report:")
     print(classification_report(y_test, preds))
 
-    # 11. SAVE MODEL
+    # 12. SAVE MODEL
     model_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../models"))
     os.makedirs(model_dir, exist_ok=True)
 
