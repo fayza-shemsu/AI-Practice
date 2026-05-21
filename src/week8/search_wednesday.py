@@ -1,10 +1,13 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import json
 import time
 import requests
 
 SEARCH_ENDPOINT = "https://fayz-search.search.windows.net"
-SEARCH_KEY      = "P8vmYuqS7rOctpch0i8SMVFjOBokUtCpufq9B1s9cmAzSeCFyHJC"
+SEARCH_KEY = os.getenv("AZURE_SEARCH_KEY")
 INDEX_NAME      = "connectplus-contracts"
 API_VERSION     = "2024-07-01"
 

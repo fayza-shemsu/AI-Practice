@@ -1,10 +1,13 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import json
 import time
 import requests
 
 SEARCH_ENDPOINT  = "https://fayz-search.search.windows.net"
-SEARCH_KEY       = "P8vmYuqS7rOctpch0i8SMVFjOBokUtCpufq9B1s9cmAzSeCFyHJC"
+SEARCH_KEY = os.getenv("AZURE_SEARCH_KEY")
 STORAGE_CONN     = "DefaultEndpointsProtocol=https;AccountName=aiinterns;AccountKey=Fj6QB7KPLoNaJVqLwUqcXx2QIqTslcUG8ygVMBAzidaBHm4HrBmKE73wfbjpWRhPz8r6fJ3Bx1W1+ASt9X/49w==;EndpointSuffix=core.windows.net"
 INDEX_NAME       = "fifty-contracts-index"
 DATASOURCE_NAME  = "fifty-contracts-datasource"

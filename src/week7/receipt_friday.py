@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import re
 import json
 import time
@@ -6,7 +9,7 @@ import requests
 from PIL import Image, ImageDraw
 
 VISION_ENDPOINT = "https://fayz-vision-service.cognitiveservices.azure.com/"
-VISION_KEY      = "EVsspW5fNPdxmxoQPJeWl2zgF2g4HlEs1aJd4Br5M3qPJ1I1vFhDJQQJ99CEACYeBjFXJ3w3AAAFACOGynap"
+VISION_KEY = os.getenv("AZURE_VISION_KEY")
 
 os.makedirs("./outputs/week7/friday", exist_ok=True)
 

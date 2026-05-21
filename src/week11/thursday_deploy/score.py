@@ -9,6 +9,9 @@ Week 11: init() loads connections    → run() runs RAG pipeline
 The deployment concept is identical. The payload changed.
 """
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import json
 import logging
 from openai import AzureOpenAI
@@ -22,10 +25,10 @@ logger = logging.getLogger(__name__)
 oai_client    = None
 search_client = None
 
-AZURE_OAI_ENDPOINT = "https://fayz-openai.openai.azure.com/"
-AZURE_OAI_KEY      = "F2FBAVkbe8isc2gqXnSO7HYr4Gh03L8Y5FegiE4DM4yZi9NRfS03JQQJ99CEACYeBjFXJ3w3AAABACOGjfTg"
+AZURE_OAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OAI_KEY = os.getenv("AZURE_OPENAI_KEY")
 SEARCH_ENDPOINT    = "https://fayz-search.search.windows.net"
-SEARCH_KEY         = "P8vmYuqS7rOctpch0i8SMVFjOBokUtCpufq9B1s9cmAzSeCFyHJC"
+SEARCH_KEY = os.getenv("AZURE_SEARCH_KEY")
 SEARCH_INDEX       = "connectplus-rag"
 
 

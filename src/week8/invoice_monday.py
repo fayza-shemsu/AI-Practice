@@ -1,11 +1,14 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import time
 import json
 import requests
 from fpdf import FPDF
 
 DI_ENDPOINT = "https://fayz-doc-intelligence.cognitiveservices.azure.com/"
-DI_KEY      = "49TWKpsWyt3iFly4IpoqdumsW8rcaodkjp2ac1i86LSkHNA5Ew0KJQQJ99CEACYeBjFXJ3w3AAALACOGxHae"
+DI_KEY = os.getenv("AZURE_FORM_RECOGNIZER_KEY")
 
 os.makedirs("./outputs/week8", exist_ok=True)
 

@@ -1,7 +1,10 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import requests
 
-SPEECH_KEY    = "6yQKLUGc1Ffo4SUPVgxvYb4NizTaQaaRDgXdAYRsnD6OmgtYFj0iJQQJ99CEACYeBjFXJ3w3AAAYACOGbcaE"
+SPEECH_KEY = os.getenv("AZURE_SPEECH_KEY")
 SPEECH_REGION = "eastus"
 
 os.makedirs("./outputs/week7/audio", exist_ok=True)

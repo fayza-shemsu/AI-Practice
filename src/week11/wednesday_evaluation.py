@@ -3,7 +3,10 @@ Week 11 Wednesday — Groundedness Evaluation
 Runs your RAG pipeline on 10 questions and measures
 how grounded each answer is using LLM-as-judge.
 """
-import os, json, time, sys
+import os
+from dotenv import load_dotenv
+
+load_dotenv(), json, time, sys
 sys.path.insert(0, "src/week11/wednesday_eval")
 
 from groundedness_eval import evaluate_groundedness
@@ -14,10 +17,10 @@ from azure.core.credentials import AzureKeyCredential
 
 os.makedirs("./outputs/week11", exist_ok=True)
 
-AZURE_OAI_ENDPOINT = "https://fayz-openai.openai.azure.com/"
-AZURE_OAI_KEY      = "F2FBAVkbe8isc2gqXnSO7HYr4Gh03L8Y5FegiE4DM4yZi9NRfS03JQQJ99CEACYeBjFXJ3w3AAABACOGjfTg"
+AZURE_OAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OAI_KEY = os.getenv("AZURE_OPENAI_KEY")
 SEARCH_ENDPOINT    = "https://fayz-search.search.windows.net"
-SEARCH_KEY         = "P8vmYuqS7rOctpch0i8SMVFjOBokUtCpufq9B1s9cmAzSeCFyHJC"
+SEARCH_KEY = os.getenv("AZURE_SEARCH_KEY")
 SEARCH_INDEX       = "connectplus-rag"
 
 oai_client = AzureOpenAI(

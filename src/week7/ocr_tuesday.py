@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import json
 import time
 from azure.ai.vision.imageanalysis import ImageAnalysisClient
@@ -7,7 +10,7 @@ from azure.core.credentials import AzureKeyCredential
 
 # Your Vision resource credentials
 ENDPOINT = "https://fayz-vision-service.cognitiveservices.azure.com/"
-KEY      = "EVsspW5fNPdxmxoQPJeWl2zgF2g4HlEs1aJd4Br5M3qPJ1I1vFhDJQQJ99CEACYeBjFXJ3w3AAAFACOGynap"
+KEY = os.getenv("AZURE_VISION_KEY")
 
 client = ImageAnalysisClient(
     endpoint=ENDPOINT,

@@ -1,11 +1,14 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import json
 import math
 import time
 from openai import AzureOpenAI
 
-AZURE_OAI_ENDPOINT = "https://fayz-openai.openai.azure.com/"
-AZURE_OAI_KEY      = "F2FBAVkbe8isc2gqXnSO7HYr4Gh03L8Y5FegiE4DM4yZi9NRfS03JQQJ99CEACYeBjFXJ3w3AAABACOGjfTg"
+AZURE_OAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OAI_KEY = os.getenv("AZURE_OPENAI_KEY")
 DEPLOYMENT_EMBED   = "text-embedding-3-small"
 
 client = AzureOpenAI(

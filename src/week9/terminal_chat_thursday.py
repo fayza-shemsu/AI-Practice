@@ -1,12 +1,15 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import sys
 import json
 import time
 from datetime import datetime
 from openai import AzureOpenAI
 
-AZURE_OAI_ENDPOINT = "https://fayz-openai.openai.azure.com/"
-AZURE_OAI_KEY      = "F2FBAVkbe8isc2gqXnSO7HYr4Gh03L8Y5FegiE4DM4yZi9NRfS03JQQJ99CEACYeBjFXJ3w3AAABACOGjfTg"
+AZURE_OAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OAI_KEY = os.getenv("AZURE_OPENAI_KEY")
 DEPLOYMENT         = "gpt-4o"
 
 COST_PER_1K_INPUT  = 0.005

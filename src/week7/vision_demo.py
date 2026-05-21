@@ -1,3 +1,7 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import streamlit as st
 from azure.ai.vision.imageanalysis import ImageAnalysisClient
 from azure.ai.vision.imageanalysis.models import VisualFeatures
@@ -7,7 +11,7 @@ from azure.core.credentials import AzureKeyCredential
 # AZURE CONFIG (PUT YOUR VALUES)
 # ───────────────────────────────
 ENDPOINT = "https://fayz-vision-service.cognitiveservices.azure.com/"
-KEY = "EVsspW5fNPdxmxoQPJeWl2zgF2g4HlEs1aJd4Br5M3qPJ1I1vFhDJQQJ99CEACYeBjFXJ3w3AAAFACOGynap"
+KEY = os.getenv("AZURE_VISION_KEY")
 
 client = ImageAnalysisClient(
     endpoint=ENDPOINT,

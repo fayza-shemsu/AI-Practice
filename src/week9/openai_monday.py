@@ -1,12 +1,15 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 import json
 
 from openai import AzureOpenAI
 
-AZURE_OAI_ENDPOINT = "https://fayz-openai.openai.azure.com/"
+AZURE_OAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
 
-AZURE_OAI_KEY      = "B2W56Y0rYjtG79LbyNLyIVNJNaeR7ESba195PkOnIhv2MvCy409WJQQJ99CEACYeBjFXJ3w3AAABACOGrPCG"
+AZURE_OAI_KEY = os.getenv("AZURE_OPENAI_KEY")
 
 DEPLOYMENT_35      = "gpt-4o"
 

@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import json
 from azure.ai.vision.imageanalysis import ImageAnalysisClient
 from azure.ai.vision.imageanalysis.models import VisualFeatures
@@ -8,7 +11,7 @@ from azure.core.credentials import AzureKeyCredential
 # Replace these with your actual values from Azure Portal
 # Portal → Your Vision Resource → Keys and Endpoint
 ENDPOINT = "https://fayz-vision-service.cognitiveservices.azure.com/"
-KEY      = "EVsspW5fNPdxmxoQPJeWl2zgF2g4HlEs1aJd4Br5M3qPJ1I1vFhDJQQJ99CEACYeBjFXJ3w3AAAFACOGynap"
+KEY = os.getenv("AZURE_VISION_KEY")
 
 # ── CREATE CLIENT ─────────────────────────────────────────────────
 client = ImageAnalysisClient(

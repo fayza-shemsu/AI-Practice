@@ -1,10 +1,13 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import time
 import requests
 
 VISION_ENDPOINT = "https://fayz-vision-service.cognitiveservices.azure.com/"
-VISION_KEY      = "EVsspW5fNPdxmxoQPJeWl2zgF2g4HlEs1aJd4Br5M3qPJ1I1vFhDJQQJ99CEACYeBjFXJ3w3AAAFACOGynap"
-SPEECH_KEY      = "6yQKLUGc1Ffo4SUPVgxvYb4NizTaQaaRDgXdAYRsnD6OmgtYFj0iJQQJ99CEACYeBjFXJ3w3AAAYACOGbcaE"
+VISION_KEY = os.getenv("AZURE_VISION_KEY")
+SPEECH_KEY = os.getenv("AZURE_SPEECH_KEY")
 SPEECH_REGION   = "eastus"
 
 os.makedirs("./outputs/week7/thursday", exist_ok=True)
