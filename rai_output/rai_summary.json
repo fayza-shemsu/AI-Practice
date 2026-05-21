@@ -1,0 +1,115 @@
+{
+  "model": "churn-model-fayza v2",
+  "accuracy": 0.8684,
+  "f1_score": 0.8734,
+  "total_test": 12875,
+  "total_errors": 1694,
+  "leakage_removed": [
+    "Payment Delay",
+    "Last Interaction"
+  ],
+  "error_analysis": {
+    "Gender": {
+      "Female": {
+        "accuracy": 0.8373,
+        "errors": 1107,
+        "total": 6803,
+        "false_negatives": 244,
+        "false_positives": 863
+      },
+      "Male": {
+        "accuracy": 0.9033,
+        "errors": 587,
+        "total": 6072,
+        "false_negatives": 14,
+        "false_positives": 573
+      }
+    },
+    "Subscription Type": {
+      "Basic": {
+        "accuracy": 0.8634,
+        "errors": 585,
+        "total": 4282,
+        "false_negatives": 103,
+        "false_positives": 482
+      },
+      "Premium": {
+        "accuracy": 0.8706,
+        "errors": 560,
+        "total": 4327,
+        "false_negatives": 79,
+        "false_positives": 481
+      },
+      "Standard": {
+        "accuracy": 0.8713,
+        "errors": 549,
+        "total": 4266,
+        "false_negatives": 76,
+        "false_positives": 473
+      }
+    },
+    "Contract Length": {
+      "Annual": {
+        "accuracy": 0.8862,
+        "errors": 482,
+        "total": 4237,
+        "false_negatives": 73,
+        "false_positives": 409
+      },
+      "Monthly": {
+        "accuracy": 0.8452,
+        "errors": 675,
+        "total": 4361,
+        "false_negatives": 141,
+        "false_positives": 534
+      },
+      "Quarterly": {
+        "accuracy": 0.8744,
+        "errors": 537,
+        "total": 4277,
+        "false_negatives": 44,
+        "false_positives": 493
+      }
+    }
+  },
+  "fairness": {
+    "Gender": {
+      "gap": 0.066,
+      "status": "WARNING",
+      "groups": {
+        "Male": 0.9033,
+        "Female": 0.8373
+      }
+    },
+    "Subscription Type": {
+      "gap": 0.0079,
+      "status": "FAIR",
+      "groups": {
+        "Premium": 0.8706,
+        "Basic": 0.8634,
+        "Standard": 0.8713
+      }
+    },
+    "Contract Length": {
+      "gap": 0.041,
+      "status": "FAIR",
+      "groups": {
+        "Quarterly": 0.8744,
+        "Monthly": 0.8452,
+        "Annual": 0.8862
+      }
+    }
+  },
+  "top_features": {
+    "Support Calls": 0.1532,
+    "Tenure": 0.1133,
+    "Gender_Male": 0.0905,
+    "Usage Frequency": 0.0578,
+    "Total Spend": 0.0533,
+    "Age": 0.0315,
+    "Contract Length_Monthly": 0.0295,
+    "Last Interaction": 0.0149,
+    "Contract Length_Quarterly": 0.0094,
+    "Subscription Type_Standard": 0.0044
+  }
+}

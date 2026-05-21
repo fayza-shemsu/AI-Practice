@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Q01",
+    "question": "What is the cancellation fee after 6 months?",
+    "expected_answer": "£25 early termination fee",
+    "category": "cancellation"
+  },
+  {
+    "id": "Q02",
+    "question": "How long do I have to return equipment after cancelling?",
+    "expected_answer": "14 days",
+    "category": "cancellation"
+  },
+  {
+    "id": "Q03",
+    "question": "What happens if my direct debit fails three times?",
+    "expected_answer": "account suspended",
+    "category": "billing"
+  },
+  {
+    "id": "Q04",
+    "question": "How quickly is a double billing refund processed?",
+    "expected_answer": "3 to 5 working days",
+    "category": "billing"
+  },
+  {
+    "id": "Q05",
+    "question": "What is the maximum discount an agent can offer?",
+    "expected_answer": "20% for 3 months",
+    "category": "retention"
+  },
+  {
+    "id": "Q06",
+    "question": "When should an agent escalate to a supervisor?",
+    "expected_answer": "legal action or Ofcom",
+    "category": "retention"
+  },
+  {
+    "id": "Q07",
+    "question": "What speed does the Premium Plan offer?",
+    "expected_answer": "150Mbps",
+    "category": "plans"
+  },
+  {
+    "id": "Q08",
+    "question": "Does ConnectPlus offer 5G mobile plans?",
+    "expected_answer": null,
+    "category": "out_of_scope"
+  },
+  {
+    "id": "Q09",
+    "question": "I have been a customer for 18 months can I cancel for free?",
+    "expected_answer": "no termination fee",
+    "category": "cancellation"
+  },
+  {
+    "id": "Q10",
+    "question": "What is the late payment fee?",
+    "expected_answer": "£12",
+    "category": "billing"
+  }
+]
