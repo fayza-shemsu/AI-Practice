@@ -1,0 +1,50 @@
+{
+  "model": "churn-model-fayza v2",
+  "registered_data": "churn-dataset@latest",
+  "global_importance": {
+    "Support Calls": 0.1532,
+    "Tenure": 0.1133,
+    "Gender_Male": 0.0905,
+    "Usage Frequency": 0.0578,
+    "Total Spend": 0.0533,
+    "Age": 0.0315,
+    "Contract Length_Monthly": 0.0295,
+    "Last Interaction": 0.0149,
+    "Contract Length_Quarterly": 0.0094,
+    "Subscription Type_Standard": 0.0044,
+    "Subscription Type_Premium": 0.004
+  },
+  "business_insights": [
+    {
+      "rank": 1,
+      "feature": "Support Calls",
+      "importance": 0.1532,
+      "action": "Reduce Support Calls to lower churn risk"
+    },
+    {
+      "rank": 2,
+      "feature": "Tenure",
+      "importance": 0.1133,
+      "action": "Reduce Tenure to lower churn risk"
+    },
+    {
+      "rank": 3,
+      "feature": "Gender_Male",
+      "importance": 0.0905,
+      "action": "Increase Gender_Male to lower churn risk"
+    },
+    {
+      "rank": 4,
+      "feature": "Usage Frequency",
+      "importance": 0.0578,
+      "action": "Increase Usage Frequency to lower churn risk"
+    },
+    {
+      "rank": 5,
+      "feature": "Total Spend",
+      "importance": 0.0533,
+      "action": "Increase Total Spend to lower churn risk"
+    }
+  ],
+  "sample_size": 500
+}

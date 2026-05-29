@@ -2,4 +2,10 @@ name: fayza-ai
 
 dependencies:
   - python=3.10
-  - pandas
+  - pip
+  - pip:
+      - pandas
+      - numpy
+      - scikit-learn
+      - joblib
+      - azureml-mlflow

@@ -1,0 +1,123 @@
+{
+  "model": "churn-model-fayza v2",
+  "registered_data": "churn-dataset@latest",
+  "sensitive_feature": "Gender",
+  "leakage_removed": [
+    "Payment Delay",
+    "Last Interaction"
+  ],
+  "audit_date": "2026-05-10 15:03:10",
+  "verdict": "BLOCKED \u2014 FAIRNESS ISSUES FOUND \u274c",
+  "overall": {
+    "accuracy": 0.7689,
+    "f1": 0.7583,
+    "n": 12875
+  },
+  "metrics": {
+    "demographic_parity_gap": 0.0527,
+    "equal_opportunity_gap": 0.382,
+    "accuracy_gap": 0.2056,
+    "dp_status": "WARNING \u26a0\ufe0f",
+    "eo_status": "BIASED \u274c",
+    "acc_status": "BIASED \u274c"
+  },
+  "by_group": {
+    "Female": {
+      "n": 6803,
+      "predicted_churn_rate": 0.4579,
+      "true_positive_rate": 0.618,
+      "false_negative_rate": 0.382,
+      "caught_churners": 2313,
+      "missed_churners": 1430,
+      "accuracy": 0.6719,
+      "f1": 0.6745
+    },
+    "Male": {
+      "n": 6072,
+      "predicted_churn_rate": 0.5105,
+      "true_positive_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "caught_churners": 2356,
+      "missed_churners": 0,
+      "accuracy": 0.8775,
+      "f1": 0.8636
+    }
+  },
+  "calibration": {
+    "Female": {
+      "0-20%": {
+        "predicted": 0.1,
+        "actual": 0.011,
+        "n": 1086,
+        "calibrated": true
+      },
+      "20-40%": {
+        "predicted": 0.3,
+        "actual": 0.5427,
+        "n": 2388,
+        "calibrated": false
+      },
+      "40-60%": {
+        "predicted": 0.5,
+        "actual": 0.5844,
+        "n": 243,
+        "calibrated": true
+      },
+      "60-80%": {
+        "predicted": 0.7,
+        "actual": 0.701,
+        "n": 2582,
+        "calibrated": true
+      },
+      "80-100%": {
+        "predicted": 0.9,
+        "actual": 0.9718,
+        "n": 497,
+        "calibrated": true
+      }
+    },
+    "Male": {
+      "0-20%": {
+        "predicted": 0.1,
+        "actual": 0.0,
+        "n": 1116,
+        "calibrated": true
+      },
+      "20-40%": {
+        "predicted": 0.3,
+        "actual": 0.0,
+        "n": 1716,
+        "calibrated": false
+      },
+      "40-60%": {
+        "predicted": 0.5,
+        "actual": 0.064,
+        "n": 172,
+        "calibrated": false
+      },
+      "60-80%": {
+        "predicted": 0.7,
+        "actual": 0.723,
+        "n": 2531,
+        "calibrated": true
+      },
+      "80-100%": {
+        "predicted": 0.9,
+        "actual": 0.9772,
+        "n": 527,
+        "calibrated": true
+      }
+    }
+  },
+  "issues": [
+    "Demographic parity gap 5.27% exceeds 5% threshold",
+    "Equal opportunity gap 38.20% exceeds 5% threshold",
+    "Accuracy gap 20.56% exceeds 5% threshold"
+  ],
+  "recommended_actions": [
+    "Retrain churn-model-fayza version 3 without Gender feature",
+    "Re-run fairness audit on version 3",
+    "All demographic gaps must be below 5% threshold",
+    "Document remediation steps for compliance record"
+  ]
+}
