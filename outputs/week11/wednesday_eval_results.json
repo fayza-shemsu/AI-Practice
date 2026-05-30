@@ -1,0 +1,161 @@
+{
+  "overall_score": 5.0,
+  "total_questions": 10,
+  "category_scores": {
+    "cancellation": 5.0,
+    "billing": 5.0,
+    "retention": 5.0,
+    "plans": 5.0,
+    "out_of_scope": 5.0
+  },
+  "results": [
+    {
+      "id": "Q01",
+      "category": "cancellation",
+      "question": "What is the cancellation fee after 6 months?",
+      "answer": "The cancellation fee after 6 months is \u00a325.",
+      "context": "After 14 days: \u00a325 early termination fee for contracts under 12 months. After 12 months: no termination fee. After 24 months: customer free to leave anytime.\n\n---\n\nConnectPlus cancellation requires 30 days written notice to cancellations@connectplus.co.uk. No fee within first 14 days cooling-off per",
+      "score": 5,
+      "reasoning": "The answer is fully grounded as the context explicitly states that the cancellation fee after 6 months is \u00a325 for contracts under 12 months.",
+      "ungrounded": [],
+      "grounded": [
+        "The cancellation fee after 6 months is \u00a325."
+      ],
+      "tokens": 474
+    },
+    {
+      "id": "Q02",
+      "category": "cancellation",
+      "question": "How long do I have to return equipment after cancelling?",
+      "answer": "You have 14 days to return the equipment after cancelling.",
+      "context": "Equipment return required within 14 days of cancellation. Non-return fee: \u00a375 on final bill. Return label sent via email within 2 working days.\n\n---\n\nConnectPlus cancellation requires 30 days written notice to cancellations@connectplus.co.uk. No fee within first 14 days cooling-off period under Cons",
+      "score": 5,
+      "reasoning": "The answer is fully grounded as the claim that equipment must be returned within 14 days of cancellation is explicitly supported by the context.",
+      "ungrounded": [],
+      "grounded": [
+        "You have 14 days to return the equipment after cancelling."
+      ],
+      "tokens": 467
+    },
+    {
+      "id": "Q03",
+      "category": "billing",
+      "question": "What happens if my direct debit fails three times?",
+      "answer": "If your direct debit fails three times, your account will be suspended, and a reconnection fee will apply.",
+      "context": "Direct debit failure first time: \u00a35 admin fee, payment retried after 5 working days. Second failure: additional \u00a35. Third failure: account suspended, reconnection fee applies.\n\n---\n\nDouble billing error: refund within 3-5 working days. Overcharge disputes must be raised within 60 days via billing@co",
+      "score": 5,
+      "reasoning": "Every claim in the answer is fully supported by the context provided.",
+      "ungrounded": [],
+      "grounded": [
+        "If your direct debit fails three times, your account will be suspended",
+        "a reconnection fee will apply"
+      ],
+      "tokens": 475
+    },
+    {
+      "id": "Q04",
+      "category": "billing",
+      "question": "How quickly is a double billing refund processed?",
+      "answer": "A double billing refund is processed within 3-5 working days.",
+      "context": "Double billing error: refund within 3-5 working days. Overcharge disputes must be raised within 60 days via billing@connectplus.co.uk.\n\n---\n\nFinal bill issued within 5 working days. Pro-rata refund calculated from cancellation date. Refunds to original payment method within 7 working days.\n\n---\n\nBil",
+      "score": 5,
+      "reasoning": "The answer is fully grounded as the claim that a double billing refund is processed within 3-5 working days is explicitly supported by the context.",
+      "ungrounded": [],
+      "grounded": [
+        "A double billing refund is processed within 3-5 working days."
+      ],
+      "tokens": 466
+    },
+    {
+      "id": "Q05",
+      "category": "retention",
+      "question": "What is the maximum discount an agent can offer?",
+      "answer": "The maximum discount an agent can offer is 20% for 3 months.",
+      "context": "Discount authorisation limits: Agent max 20% for 3 months. Team Leader max 30% for 6 months. Manager max 50% for 12 months requires written approval.\n\n---\n\nHIGH RISK actions: acknowledge frustration first, offer 20% loyalty discount for 3 months maximum, assign dedicated Tier-2 agent, priority engin",
+      "score": 5,
+      "reasoning": "The answer is fully grounded as every claim made is directly supported by the context provided.",
+      "ungrounded": [],
+      "grounded": [
+        "The maximum discount an agent can offer is 20%",
+        "The discount can be offered for 3 months"
+      ],
+      "tokens": 482
+    },
+    {
+      "id": "Q06",
+      "category": "retention",
+      "question": "When should an agent escalate to a supervisor?",
+      "answer": "An agent should escalate to a supervisor if the customer mentions legal action, Ofcom, media threat, safeguarding concern, or bereavement.",
+      "context": "ESCALATE to supervisor immediately if customer mentions: legal action, Ofcom, media threat, safeguarding concern, bereavement.\n\n---\n\nHIGH RISK actions: acknowledge frustration first, offer 20% loyalty discount for 3 months maximum, assign dedicated Tier-2 agent, priority engineer visit within 48 hou",
+      "score": 5,
+      "reasoning": "Every claim in the answer is explicitly supported by the context, which lists the exact scenarios requiring escalation to a supervisor.",
+      "ungrounded": [],
+      "grounded": [
+        "An agent should escalate to a supervisor if the customer mentions legal action",
+        "Ofcom",
+        "media threat",
+        "safeguarding concern",
+        "bereavement"
+      ],
+      "tokens": 508
+    },
+    {
+      "id": "Q07",
+      "category": "plans",
+      "question": "What speed does the Premium Plan offer?",
+      "answer": "The Premium Plan offers 150Mbps download and 30Mbps upload speeds.",
+      "context": "Premium Plan: 150Mbps download, 30Mbps upload, \u00a350 per month, 12-month contract, priority support, TV app, static IP option.\n\n---\n\nUltrafast Plan: 500Mbps download, 50Mbps upload, \u00a370 per month, 24-month contract, dedicated support line, 2 static IPs.\n\n---\n\nStandard Plan: 67Mbps download, 15Mbps upl",
+      "score": 5,
+      "reasoning": "Every claim in the answer is directly supported by the context.",
+      "ungrounded": [],
+      "grounded": [
+        "The Premium Plan offers 150Mbps download",
+        "The Premium Plan offers 30Mbps upload speeds"
+      ],
+      "tokens": 460
+    },
+    {
+      "id": "Q08",
+      "category": "out_of_scope",
+      "question": "Does ConnectPlus offer 5G mobile plans?",
+      "answer": "I do not have that information.",
+      "context": "Premium Plan: 150Mbps download, 30Mbps upload, \u00a350 per month, 12-month contract, priority support, TV app, static IP option.\n\n---\n\nStandard Plan: 67Mbps download, 15Mbps upload, \u00a335 per month, 12-month contract, includes TV app.\n\n---\n\nConnectPlus cancellation requires 30 days written notice to cance",
+      "score": 5,
+      "reasoning": "The answer correctly states 'I do not have that information,' and the context does not contain any information about 5G mobile plans.",
+      "ungrounded": [],
+      "grounded": [
+        "I do not have that information"
+      ],
+      "tokens": 456
+    },
+    {
+      "id": "Q09",
+      "category": "cancellation",
+      "question": "I have been a customer for 18 months can I cancel for free?",
+      "answer": "Yes, you can cancel for free as there is no termination fee after 12 months.",
+      "context": "After 14 days: \u00a325 early termination fee for contracts under 12 months. After 12 months: no termination fee. After 24 months: customer free to leave anytime.\n\n---\n\nConnectPlus cancellation requires 30 days written notice to cancellations@connectplus.co.uk. No fee within first 14 days cooling-off per",
+      "score": 5,
+      "reasoning": "The answer is fully grounded as the context explicitly states there is no termination fee after 12 months, which applies to the customer's situation of being a customer for 18 months.",
+      "ungrounded": [],
+      "grounded": [
+        "Yes, you can cancel for free",
+        "there is no termination fee after 12 months"
+      ],
+      "tokens": 500
+    },
+    {
+      "id": "Q10",
+      "category": "billing",
+      "question": "What is the late payment fee?",
+      "answer": "The late payment fee is \u00a312 after the grace period.",
+      "context": "Bills generated on 1st of each month for following month. Payment due within 14 days. Late payment fee \u00a312 after grace period.\n\n---\n\nDirect debit failure first time: \u00a35 admin fee, payment retried after 5 working days. Second failure: additional \u00a35. Third failure: account suspended, reconnection fee ",
+      "score": 5,
+      "reasoning": "The answer is fully grounded as the claim that the late payment fee is \u00a312 after the grace period is explicitly supported by the context.",
+      "ungrounded": [],
+      "grounded": [
+        "The late payment fee is \u00a312 after the grace period."
+      ],
+      "tokens": 473
+    }
+  ]
+}

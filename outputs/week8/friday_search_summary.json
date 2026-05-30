@@ -1,0 +1,24 @@
+{
+  "total_pdfs_indexed": 0,
+  "index_name": "fifty-contracts-index",
+  "query_patterns_tested": [
+    "Keyword: termination fee",
+    "Fuzzy~1: terminaton fee (typo in termination)",
+    "Fuzzy~1: montly enterprize (two typos)",
+    "Fuzzy~2: cancllation (2 edits from cancellation)",
+    "Phrase: \"early termination\" (exact phrase)",
+    "Boosted: enterprise^3 OR basic^1 (enterprise weighted 3x)",
+    "Filter + Keyword: search=pro AND location contains Japan",
+    "Person filter: contracts involving Japan or Italy"
+  ],
+  "results_per_query": {
+    "Keyword: termination fee": 20,
+    "Fuzzy~1: terminaton fee (typo in termination)": 20,
+    "Fuzzy~1: montly enterprize (two typos)": 20,
+    "Fuzzy~2: cancllation (2 edits from cancellation)": 20,
+    "Phrase: \"early termination\" (exact phrase)": 20,
+    "Boosted: enterprise^3 OR basic^1 (enterprise weighted 3x)": 20,
+    "Filter + Keyword: search=pro AND location contains Japan": 20,
+    "Person filter: contracts involving Japan or Italy": 20
+  }
+}

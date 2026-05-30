@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Can someone visit me today to fix my internet?",
+    "answer": "Hello, this is Finn from ConnectPlus UK. Our support line is currently closed and will reopen tomorrow at 8am UK time. If you're experiencing a technical issue, the weather in London (light drizzle, 12.1\u00b0C) is suitable for an engineer visit, and we can prioritise this for you when the line reopens. In the meantime, if your broadband speed has been below 50% of the advertised rate for 3 consecutive days, you can log this at speedtest.connectplus.co.uk to explore your options under our Speed Promise.",
+    "time_data": {
+      "utc_time": "2026-05-07 19:35 UTC",
+      "uk_time": "2026-05-07 20:35 GMT",
+      "uk_date": "Thursday 07 May 2026",
+      "hour_uk": 20,
+      "is_business_hours": false,
+      "support_status": "CLOSED \u2014 opens 8am UK time",
+      "day_name": "Thursday"
+    },
+    "weather": {
+      "city": "London",
+      "temperature_c": 12.1,
+      "temperature_f": 53.8,
+      "condition": "Light drizzle",
+      "wind_kmh": 8.6,
+      "precipitation_mm": 0.1,
+      "engineer_visit": "SUITABLE for engineer visit",
+      "summary": "Light drizzle, 12.1\u00b0C, wind 8.6km/h"
+    },
+    "tool_ms": 1368,
+    "llm_ms": 5529
+  },
+  {
+    "question": "I want to cancel my contract. Is support open now?",
+    "answer": "Hello, thank you for reaching out. Our support line is currently closed and will reopen tomorrow at 8am UK time. If you're experiencing a technical issue, the weather in Manchester is suitable for an engineer visit, and we can prioritise this within 48 hours if needed. Please let me know how I can assist further!",
+    "time_data": {
+      "utc_time": "2026-05-07 19:35 UTC",
+      "uk_time": "2026-05-07 20:35 GMT",
+      "uk_date": "Thursday 07 May 2026",
+      "hour_uk": 20,
+      "is_business_hours": false,
+      "support_status": "CLOSED \u2014 opens 8am UK time",
+      "day_name": "Thursday"
+    },
+    "weather": {
+      "city": "Manchester",
+      "temperature_c": 12.4,
+      "temperature_f": 54.3,
+      "condition": "Overcast",
+      "wind_kmh": 13.3,
+      "precipitation_mm": 0.0,
+      "engineer_visit": "SUITABLE for engineer visit",
+      "summary": "Overcast, 12.4\u00b0C, wind 13.3km/h"
+    },
+    "tool_ms": 773,
+    "llm_ms": 2753
+  },
+  {
+    "question": "What happens if my direct debit fails?",
+    "answer": "Hello, this is Finn from ConnectPlus UK. Our support line is currently closed and will reopen tomorrow at 8am UK time. If your query is about billing, please note that payments are due within 14 days of the bill being generated on the 1st of each month, with a \u00a312 late payment fee after the grace period. For urgent issues like double billing or overcharges, you can email billing@connectplus.co.uk, and refunds for errors are processed within 3-5 working days.",
+    "time_data": {
+      "utc_time": "2026-05-07 19:35 UTC",
+      "uk_time": "2026-05-07 20:35 GMT",
+      "uk_date": "Thursday 07 May 2026",
+      "hour_uk": 20,
+      "is_business_hours": false,
+      "support_status": "CLOSED \u2014 opens 8am UK time",
+      "day_name": "Thursday"
+    },
+    "weather": {
+      "city": "London",
+      "temperature_c": 12.1,
+      "temperature_f": 53.8,
+      "condition": "Light drizzle",
+      "wind_kmh": 8.6,
+      "precipitation_mm": 0.1,
+      "engineer_visit": "SUITABLE for engineer visit",
+      "summary": "Light drizzle, 12.1\u00b0C, wind 8.6km/h"
+    },
+    "tool_ms": 780,
+    "llm_ms": 5658
+  },
+  {
+    "question": "What broadband speeds do you offer?",
+    "answer": "Hello! Our support line is currently closed and will reopen tomorrow at 8am UK time. If you're experiencing speed issues, you can log your results at speedtest.connectplus.co.uk to check against our Speed Promise. Please note, the weather in London is light drizzle with a temperature of 12.1\u00b0C, which shouldn't affect your service. Let me know if there's anything else I can assist with!",
+    "time_data": {
+      "utc_time": "2026-05-07 19:35 UTC",
+      "uk_time": "2026-05-07 20:35 GMT",
+      "uk_date": "Thursday 07 May 2026",
+      "hour_uk": 20,
+      "is_business_hours": false,
+      "support_status": "CLOSED \u2014 opens 8am UK time",
+      "day_name": "Thursday"
+    },
+    "weather": {
+      "city": "London",
+      "temperature_c": 12.1,
+      "temperature_f": 53.8,
+      "condition": "Light drizzle",
+      "wind_kmh": 8.6,
+      "precipitation_mm": 0.1,
+      "engineer_visit": "SUITABLE for engineer visit",
+      "summary": "Light drizzle, 12.1\u00b0C, wind 8.6km/h"
+    },
+    "tool_ms": 779,
+    "llm_ms": 6711
+  }
+]

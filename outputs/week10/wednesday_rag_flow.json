@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is the cancellation fee after 6 months?",
+    "search_query": "What is the cancellation fee after 6 months?",
+    "answer": "The cancellation fee after 6 months is \u00a325 for contracts under 12 months. For contracts over 12 months, there is no termination fee. [cancellation_policy.pdf, p.1]",
+    "sources": [
+      "cancel_p1",
+      "billing_p3",
+      "billing_p2"
+    ],
+    "top_score": 0.5629,
+    "refused": false,
+    "tokens": 382,
+    "latency_ms": 1978,
+    "gen_ms": 1782,
+    "validation": null
+  },
+  {
+    "question": "I was charged twice. When do I get my refund?",
+    "search_query": "I was charged twice. When do I get my refund?",
+    "answer": "Refunds for being charged twice are processed within 5 to 7 working days to the original payment method. If the payment was made via direct debit, the refund may take up to 10 working days. [cancellation_policy.pdf, p.2]",
+    "sources": [
+      "cancel_p2",
+      "billing_p2",
+      "billing_p3"
+    ],
+    "top_score": 0.5879,
+    "refused": false,
+    "tokens": 380,
+    "latency_ms": 2391,
+    "gen_ms": 2235,
+    "validation": null
+  },
+  {
+    "question": "My internet drops every night at 9pm.",
+    "search_query": "My internet drops every night at 9pm.",
+    "answer": "Internet dropping every night at 9pm could be due to peak time congestion. You can try restarting your router by holding the reset button for 10 seconds and waiting 2 minutes. If the issue persists and your speed is below 50% of your plan for 3 consecutive days, you can call 0800 123 456 to invoke the Speed Promise. An engineer visit may also be required to check the line quality. [technical_support.pdf, p.5]",
+    "sources": [
+      "technical_p5",
+      "products_p7",
+      "billing_p3"
+    ],
+    "top_score": 0.5844,
+    "refused": false,
+    "tokens": 459,
+    "latency_ms": 6707,
+    "gen_ms": 6601,
+    "validation": null
+  },
+  {
+    "question": "What is the best plan if I want 150Mbps?",
+    "search_query": "What is the best plan if I want 150Mbps?",
+    "answer": "The best plan for 150Mbps is the Premium plan, which costs \u00a350 per month and requires a 12-month contract. [product_catalogue.pdf, p.7]",
+    "sources": [
+      "products_p7",
+      "technical_p5",
+      "billing_p3"
+    ],
+    "top_score": 0.5222,
+    "refused": false,
+    "tokens": 401,
+    "latency_ms": 1809,
+    "gen_ms": 1657,
+    "validation": null
+  },
+  {
+    "question": "Can ConnectPlus raise my bill without warning?",
+    "search_query": "Can ConnectPlus raise my bill without warning?",
+    "answer": "No, ConnectPlus cannot raise your bill without warning. They are required to provide a minimum of 30 days' written notice before any price increase. If you do not accept the price increase, you have the option to exit the contract without penalty by notifying ConnectPlus within 30 days of receiving the notice. [billing_policy.pdf, p.3]",
+    "sources": [
+      "billing_p3",
+      "products_p7",
+      "cancel_p1"
+    ],
+    "top_score": 0.6612,
+    "refused": false,
+    "tokens": 434,
+    "latency_ms": 2890,
+    "gen_ms": 2619,
+    "validation": null
+  }
+]

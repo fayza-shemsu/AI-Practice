@@ -1,0 +1,84 @@
+{
+  "test1_dims": 1536,
+  "semantic_pairs": [
+    {
+      "a": "cancel my subscription",
+      "b": "I want to stop my service",
+      "score": 0.591,
+      "interpretation": "VERY SIMILAR"
+    },
+    {
+      "a": "cancel my subscription",
+      "b": "how do I leave ConnectPlus",
+      "score": 0.3873,
+      "interpretation": "LOOSELY RELATED"
+    },
+    {
+      "a": "cancel my subscription",
+      "b": "my bill is too high",
+      "score": 0.3579,
+      "interpretation": "LOOSELY RELATED"
+    },
+    {
+      "a": "cancel my subscription",
+      "b": "what is the weather today",
+      "score": 0.1104,
+      "interpretation": "DIFFERENT TOPIC"
+    },
+    {
+      "a": "I am happy with the service",
+      "b": "great experience overall",
+      "score": 0.3878,
+      "interpretation": "LOOSELY RELATED"
+    },
+    {
+      "a": "I am happy with the service",
+      "b": "terrible, worst company ever",
+      "score": 0.1973,
+      "interpretation": "DIFFERENT TOPIC"
+    }
+  ],
+  "semantic_search": {
+    "How do I cancel? Is there a fee?": {
+      "top_result": "ConnectPlus cancellation requires 30 days notice. \u00a325 fee after 14 days.",
+      "score": 0.5615
+    },
+    "My internet is slow every evening": {
+      "top_result": "Internet dropping at 9pm is likely peak-time congestion. Engineer visit resolves.",
+      "score": 0.4879
+    },
+    "What can I offer an angry customer threatening to leave?": {
+      "top_result": "High risk customers: offer 20% discount for 3 months plus dedicated agent.",
+      "score": 0.3711
+    },
+    "I was charged twice this month": {
+      "top_result": "Monthly bills generated on 1st. Late payment fee \u00a312 after 14 days.",
+      "score": 0.4341
+    }
+  },
+  "clusters": [
+    [
+      "I want to cancel my account",
+      "How do I stop my subscription"
+    ],
+    [
+      "I am leaving ConnectPlus"
+    ],
+    [
+      "My bill is wrong this month",
+      "I was charged the wrong amount",
+      "There is an error on my invoice"
+    ],
+    [
+      "My internet keeps dropping",
+      "Wi-Fi cuts out every evening"
+    ],
+    [
+      "The connection is very slow"
+    ]
+  ],
+  "dimension_reduction": {
+    "full_1536": 0.591,
+    "reduced_256": 0.6094
+  }
+}

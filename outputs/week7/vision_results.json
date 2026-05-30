@@ -1,0 +1,174 @@
+{
+  "image_url": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800",
+  "caption": "a city with persony tall buildings",
+  "caption_confidence": 0.6857829093933105,
+  "tags": [
+    {
+      "name": "skyline",
+      "confidence": 0.9736
+    },
+    {
+      "name": "cityscape",
+      "confidence": 0.9704
+    },
+    {
+      "name": "sky",
+      "confidence": 0.9698
+    },
+    {
+      "name": "metropolis",
+      "confidence": 0.9686
+    },
+    {
+      "name": "outdoor",
+      "confidence": 0.9677
+    },
+    {
+      "name": "metropolitan area",
+      "confidence": 0.9663
+    },
+    {
+      "name": "tower block",
+      "confidence": 0.9658
+    },
+    {
+      "name": "urban area",
+      "confidence": 0.9555
+    },
+    {
+      "name": "cloud",
+      "confidence": 0.951
+    },
+    {
+      "name": "building",
+      "confidence": 0.9485
+    },
+    {
+      "name": "tower",
+      "confidence": 0.9385
+    },
+    {
+      "name": "skyscraper",
+      "confidence": 0.9381
+    },
+    {
+      "name": "city",
+      "confidence": 0.9295
+    },
+    {
+      "name": "downtown",
+      "confidence": 0.9092
+    },
+    {
+      "name": "commercial building",
+      "confidence": 0.8737
+    },
+    {
+      "name": "sunset",
+      "confidence": 0.5625
+    }
+  ],
+  "objects": [
+    {
+      "name": "building",
+      "confidence": 0.663,
+      "bounding_box": {
+        "x": 423,
+        "y": 98,
+        "width": 25,
+        "height": 105
+      }
+    },
+    {
+      "name": "building",
+      "confidence": 0.615,
+      "bounding_box": {
+        "x": 699,
+        "y": 110,
+        "width": 43,
+        "height": 161
+      }
+    },
+    {
+      "name": "building",
+      "confidence": 0.612,
+      "bounding_box": {
+        "x": 176,
+        "y": 201,
+        "width": 48,
+        "height": 119
+      }
+    },
+    {
+      "name": "building",
+      "confidence": 0.523,
+      "bounding_box": {
+        "x": 759,
+        "y": 174,
+        "width": 35,
+        "height": 120
+      }
+    },
+    {
+      "name": "building",
+      "confidence": 0.55,
+      "bounding_box": {
+        "x": 346,
+        "y": 216,
+        "width": 39,
+        "height": 125
+      }
+    },
+    {
+      "name": "building",
+      "confidence": 0.689,
+      "bounding_box": {
+        "x": 111,
+        "y": 402,
+        "width": 89,
+        "height": 90
+      }
+    },
+    {
+      "name": "building",
+      "confidence": 0.641,
+      "bounding_box": {
+        "x": 446,
+        "y": 261,
+        "width": 73,
+        "height": 165
+      }
+    },
+    {
+      "name": "building",
+      "confidence": 0.646,
+      "bounding_box": {
+        "x": 548,
+        "y": 287,
+        "width": 68,
+        "height": 198
+      }
+    },
+    {
+      "name": "building",
+      "confidence": 0.761,
+      "bounding_box": {
+        "x": 634,
+        "y": 273,
+        "width": 105,
+        "height": 219
+      }
+    },
+    {
+      "name": "building",
+      "confidence": 0.633,
+      "bounding_box": {
+        "x": 306,
+        "y": 355,
+        "width": 106,
+        "height": 137
+      }
+    }
+  ],
+  "people_count": 4
+}

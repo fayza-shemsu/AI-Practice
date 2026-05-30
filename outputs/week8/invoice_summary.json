@@ -1,0 +1,44 @@
+{
+  "invoice_number": "INV-2026-00847",
+  "invoice_date": "2026-05-03",
+  "due_date": "2026-05-17",
+  "bill_to": "Ahmed Al-Rashidi\n456 Client Avenue, Dubai, UAE",
+  "items": [
+    {
+      "description": "ConnectPlus Pro Plan - Monthly",
+      "qty": "1",
+      "unit_price": "EUR 49.99",
+      "total": "EUR 49.99"
+    },
+    {
+      "description": "Additional User Licenses x5",
+      "qty": "5",
+      "unit_price": "EUR 4.99",
+      "total": "EUR 24.95"
+    },
+    {
+      "description": "SMS Notification Pack",
+      "qty": "1",
+      "unit_price": "EUR 9.99",
+      "total": "EUR 9.99"
+    },
+    {
+      "description": "Priority Support Add-on",
+      "qty": "1",
+      "unit_price": "EUR 14.99",
+      "total": "EUR 14.99"
+    },
+    {
+      "description": "Setup & Onboarding Fee",
+      "qty": "1",
+      "unit_price": "EUR 99.00",
+      "total": "EUR 99.00"
+    }
+  ],
+  "item_count": 5,
+  "subtotal": "Subtotal: EUR 198 ",
+  "vat": "VAT (21%): EUR 41. ",
+  "total_due": "TOTAL DUE: EUR 240",
+  "tables_found": 2,
+  "key_values_found": 14
+}

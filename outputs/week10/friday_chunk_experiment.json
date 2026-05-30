@@ -1,0 +1,332 @@
+[
+  {
+    "config": {
+      "chunk_size": 200,
+      "overlap": 20,
+      "strategy": "fixed"
+    },
+    "index_name": "chunk-exp-fixed-200",
+    "num_chunks": 16,
+    "avg_chunk_len": 178,
+    "avg_score": 1.0,
+    "total_tokens": 975,
+    "avg_latency_ms": 1382,
+    "question_results": [
+      {
+        "question_id": "Q1",
+        "question_type": "simple_fact",
+        "answer": "The cancellation fee after 6 months is \u00a325.",
+        "score": 1.0,
+        "tokens": 213,
+        "latency_ms": 1057,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "days there is a \u00a325 early termination fee for contracts under 12 months. After 1"
+      },
+      {
+        "question_id": "Q2",
+        "question_type": "multi_sentence",
+        "answer": "Since you have been a customer for 18 months, you can cancel without any termination fee. You are required to return the equipment within 14 days of cancellation, and a return label will be sent via email within 2 working days of your cancellation request.",
+        "score": 1.0,
+        "tokens": 273,
+        "latency_ms": 1767,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "days there is a \u00a325 early termination fee for contracts under 12 months. After 1"
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "multi_document",
+        "answer": "For your cancellation, the pro-rata refund will be calculated from the cancellation date and sent to your original payment method within 7 working days after the final bill is issued (which takes up to 5 working days). For the billing error, refunds are processed within 3 to 5 working days.",
+        "score": 1.0,
+        "tokens": 276,
+        "latency_ms": 1706,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ncellation request. Final bill is issued within 5 working days. Pro-rata refund "
+      },
+      {
+        "question_id": "Q4",
+        "question_type": "out_of_scope",
+        "answer": "I do not have that information.",
+        "score": 1.0,
+        "tokens": 213,
+        "latency_ms": 1001,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      }
+    ]
+  },
+  {
+    "config": {
+      "chunk_size": 500,
+      "overlap": 50,
+      "strategy": "fixed"
+    },
+    "index_name": "chunk-exp-fixed-500",
+    "num_chunks": 7,
+    "avg_chunk_len": 400,
+    "avg_score": 1.0,
+    "total_tokens": 1469,
+    "avg_latency_ms": 1303,
+    "question_results": [
+      {
+        "question_id": "Q1",
+        "question_type": "simple_fact",
+        "answer": "The cancellation fee after 6 months is \u00a325, as the contract is under 12 months and the 14-day cooling-off period has passed.",
+        "score": 1.0,
+        "tokens": 325,
+        "latency_ms": 1175,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      },
+      {
+        "question_id": "Q2",
+        "question_type": "multi_sentence",
+        "answer": "Yes, you can cancel without any fee since you have been a customer for over 12 months. You have 14 days to return the equipment after cancellation.",
+        "score": 1.0,
+        "tokens": 345,
+        "latency_ms": 1431,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "multi_document",
+        "answer": "For the billing error, refunds are processed within 3 to 5 working days. For the cancellation, any pro-rata refund will be sent to your original payment method within 7 working days after the final bill is issued.",
+        "score": 1.0,
+        "tokens": 405,
+        "latency_ms": 1870,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "Bills are generated on the 1st of each month for the following month. Payment is"
+      },
+      {
+        "question_id": "Q4",
+        "question_type": "out_of_scope",
+        "answer": "I do not have that information.",
+        "score": 1.0,
+        "tokens": 394,
+        "latency_ms": 739,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      }
+    ]
+  },
+  {
+    "config": {
+      "chunk_size": 1000,
+      "overlap": 100,
+      "strategy": "fixed"
+    },
+    "index_name": "chunk-exp-fixed-1000",
+    "num_chunks": 4,
+    "avg_chunk_len": 675,
+    "avg_score": 1.0,
+    "total_tokens": 2351,
+    "avg_latency_ms": 1362,
+    "question_results": [
+      {
+        "question_id": "Q1",
+        "question_type": "simple_fact",
+        "answer": "The cancellation fee after 6 months is \u00a325 if the contract is under 12 months. If the contract is over 12 months, there is no termination fee.",
+        "score": 1.0,
+        "tokens": 468,
+        "latency_ms": 1224,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      },
+      {
+        "question_id": "Q2",
+        "question_type": "multi_sentence",
+        "answer": "Yes, you can cancel without any fee since you have been a customer for more than 12 months. You have 14 days to return the equipment after cancellation.",
+        "score": 1.0,
+        "tokens": 637,
+        "latency_ms": 1288,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "multi_document",
+        "answer": "For the billing error, refunds are processed within 3 to 5 working days. For cancellation, any pro-rata refund is sent to the original payment method within 7 working days after the final bill is issued, which itself is generated within 5 working days of cancellation.",
+        "score": 1.0,
+        "tokens": 653,
+        "latency_ms": 2031,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "Bills are generated on the 1st of each month for the following month. Payment is"
+      },
+      {
+        "question_id": "Q4",
+        "question_type": "out_of_scope",
+        "answer": "I do not have that information.",
+        "score": 1.0,
+        "tokens": 593,
+        "latency_ms": 906,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      }
+    ]
+  },
+  {
+    "config": {
+      "chunk_size": 2000,
+      "overlap": 200,
+      "strategy": "fixed"
+    },
+    "index_name": "chunk-exp-fixed-2000",
+    "num_chunks": 3,
+    "avg_chunk_len": 867,
+    "avg_score": 1.0,
+    "total_tokens": 2623,
+    "avg_latency_ms": 1232,
+    "question_results": [
+      {
+        "question_id": "Q1",
+        "question_type": "simple_fact",
+        "answer": "The cancellation fee after 6 months is \u00a325, as the contract is under 12 months and the 14-day cooling-off period has passed.",
+        "score": 1.0,
+        "tokens": 646,
+        "latency_ms": 1277,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      },
+      {
+        "question_id": "Q2",
+        "question_type": "multi_sentence",
+        "answer": "Yes, since you have been a customer for 18 months, you can cancel without any termination fee. You have 14 days from the cancellation date to return the equipment.",
+        "score": 1.0,
+        "tokens": 669,
+        "latency_ms": 1157,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "multi_document",
+        "answer": "For the billing error, refunds are processed within 3 to 5 working days. For cancellation, any pro-rata refund is sent to the original payment method within 7 working days after the final bill is issued, which itself is generated within 5 working days of the cancellation request.",
+        "score": 1.0,
+        "tokens": 685,
+        "latency_ms": 1533,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "Bills are generated on the 1st of each month for the following month. Payment is"
+      },
+      {
+        "question_id": "Q4",
+        "question_type": "out_of_scope",
+        "answer": "I do not have that information.",
+        "score": 1.0,
+        "tokens": 623,
+        "latency_ms": 962,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      }
+    ]
+  },
+  {
+    "config": {
+      "chunk_size": 500,
+      "overlap": 50,
+      "strategy": "sentence"
+    },
+    "index_name": "chunk-exp-sentence-500",
+    "num_chunks": 7,
+    "avg_chunk_len": 400,
+    "avg_score": 1.0,
+    "total_tokens": 1439,
+    "avg_latency_ms": 1368,
+    "question_results": [
+      {
+        "question_id": "Q1",
+        "question_type": "simple_fact",
+        "answer": "The cancellation fee after 6 months is \u00a325 for contracts under 12 months.",
+        "score": 1.0,
+        "tokens": 321,
+        "latency_ms": 1240,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      },
+      {
+        "question_id": "Q2",
+        "question_type": "multi_sentence",
+        "answer": "Yes, since you have been a customer for 18 months, you can cancel without any termination fee. You have 14 days from the cancellation date to return the equipment.",
+        "score": 1.0,
+        "tokens": 357,
+        "latency_ms": 2284,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "multi_document",
+        "answer": "For the billing error, refunds are processed within 3 to 5 working days after the issue is confirmed. For cancellation, any pro-rata refund is calculated from the cancellation date and sent to the original payment method within 7 working days.",
+        "score": 1.0,
+        "tokens": 400,
+        "latency_ms": 1137,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "Bills are generated on the 1st of each month for the following month. Payment is"
+      },
+      {
+        "question_id": "Q4",
+        "question_type": "out_of_scope",
+        "answer": "I do not have that information.",
+        "score": 1.0,
+        "tokens": 361,
+        "latency_ms": 811,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      }
+    ]
+  },
+  {
+    "config": {
+      "chunk_size": 1000,
+      "overlap": 100,
+      "strategy": "sentence"
+    },
+    "index_name": "chunk-exp-sentence-1000",
+    "num_chunks": 4,
+    "avg_chunk_len": 675,
+    "avg_score": 1.0,
+    "total_tokens": 2193,
+    "avg_latency_ms": 1548,
+    "question_results": [
+      {
+        "question_id": "Q1",
+        "question_type": "simple_fact",
+        "answer": "The cancellation fee after 6 months is \u00a325, as the contract is under 12 months and the 14-day cooling-off period has passed.",
+        "score": 1.0,
+        "tokens": 478,
+        "latency_ms": 1702,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      },
+      {
+        "question_id": "Q2",
+        "question_type": "multi_sentence",
+        "answer": "Yes, since you have been a customer for 18 months, you can cancel without any termination fee. You have 14 days from the cancellation date to return the equipment.",
+        "score": 1.0,
+        "tokens": 501,
+        "latency_ms": 1811,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "multi_document",
+        "answer": "For the billing error, refunds are processed within 3 to 5 working days. For cancellation, any pro-rata refund is sent to the original payment method within 7 working days after the final bill is issued, which itself is generated within 5 working days of cancellation.",
+        "score": 1.0,
+        "tokens": 637,
+        "latency_ms": 1646,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "Bills are generated on the 1st of each month for the following month. Payment is"
+      },
+      {
+        "question_id": "Q4",
+        "question_type": "out_of_scope",
+        "answer": "I do not have that information.",
+        "score": 1.0,
+        "tokens": 577,
+        "latency_ms": 1033,
+        "chunks_retrieved": 3,
+        "first_chunk_preview": "ConnectPlus cancellation requires 30 days written notice to cancellations@connec"
+      }
+    ]
+  }
+]

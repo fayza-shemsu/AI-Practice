@@ -1,7 +1,5 @@
-  *.pkl
 __pycache__/
 *.pyc
-outputs/
 rai_model*/
 sessions/
 __pycache__/
@@ -9,4 +7,4 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 data/
-models/*.pkl
+models/
