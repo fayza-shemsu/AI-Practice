@@ -17,7 +17,7 @@ DEPLOYMENT_4O      = "gpt-4o"
 
 client = AzureOpenAI(
 
-    azure_endpoint = "https://fayz-openai.openai.azure.com/",
+    azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT"),
 
     api_key        = "B2W56Y0rYjtG79LbyNLyIVNJNaeR7ESba195PkOnIhv2MvCy409WJQQJ99CEACYeBjFXJ3w3AAABACOGrPCG",
 

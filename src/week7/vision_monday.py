@@ -10,7 +10,7 @@ from azure.core.credentials import AzureKeyCredential
 # ── YOUR CREDENTIALS ──────────────────────────────────────────────
 # Replace these with your actual values from Azure Portal
 # Portal → Your Vision Resource → Keys and Endpoint
-ENDPOINT = "https://fayz-vision-service.cognitiveservices.azure.com/"
+ENDPOINT = os.getenv("AZURE_VISION_ENDPOINT")
 KEY = os.getenv("AZURE_VISION_KEY")
 
 # ── CREATE CLIENT ─────────────────────────────────────────────────

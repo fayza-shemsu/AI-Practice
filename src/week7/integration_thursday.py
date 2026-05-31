@@ -5,7 +5,7 @@ load_dotenv()
 import time
 import requests
 
-VISION_ENDPOINT = "https://fayz-vision-service.cognitiveservices.azure.com/"
+VISION_ENDPOINT = os.getenv("AZURE_VISION_ENDPOINT")
 VISION_KEY = os.getenv("AZURE_VISION_KEY")
 SPEECH_KEY = os.getenv("AZURE_SPEECH_KEY")
 SPEECH_REGION   = "eastus"

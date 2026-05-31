@@ -6,9 +6,9 @@ import json
 import time
 import requests
 
-SEARCH_ENDPOINT = "https://fayz-search.search.windows.net"
+SEARCH_ENDPOINT = os.getenv("AZURE_SEARCH_ENDPOINT")
 SEARCH_KEY = os.getenv("AZURE_SEARCH_KEY")
-STORAGE_CONN    = "DefaultEndpointsProtocol=https;AccountName=aiinterns;AccountKey=Fj6QB7KPLoNaJVqLwUqcXx2QIqTslcUG8ygVMBAzidaBHm4HrBmKE73wfbjpWRhPz8r6fJ3Bx1W1+ASt9X/49w==;EndpointSuffix=core.windows.net"
+STORAGE_CONN    = "os.getenv("AZURE_STORAGE_CONNECTION_STRING")"
 CONTAINER_NAME  = "training-forms"
 INDEX_NAME      = "connectplus-blob-index"
 DATASOURCE_NAME = "connectplus-blob-datasource"

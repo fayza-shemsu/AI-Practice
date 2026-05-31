@@ -17,8 +17,8 @@ COST_PER_1K_OUTPUT = 0.015
 MAX_HISTORY_TURNS  = 20
 
 client = AzureOpenAI(
-    azure_endpoint = "https://fayz-openai.openai.azure.com/",
-    api_key        = "F2FBAVkbe8isc2gqXnSO7HYr4Gh03L8Y5FegiE4DM4yZi9NRfS03JQQJ99CEACYeBjFXJ3w3AAABACOGjfTg",
+    azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT"),
+    api_key        = "os.getenv("AZURE_OPENAI_KEY")",
     api_version    = "2024-02-01"
 )
 

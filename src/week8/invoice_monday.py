@@ -7,7 +7,7 @@ import json
 import requests
 from fpdf import FPDF
 
-DI_ENDPOINT = "https://fayz-doc-intelligence.cognitiveservices.azure.com/"
+DI_ENDPOINT = os.getenv("AZURE_DI_ENDPOINT")
 DI_KEY = os.getenv("AZURE_FORM_RECOGNIZER_KEY")
 
 os.makedirs("./outputs/week8", exist_ok=True)

@@ -23,7 +23,7 @@ os.makedirs("./outputs/week11", exist_ok=True)
 
 AZURE_OAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
 AZURE_OAI_KEY = os.getenv("AZURE_OPENAI_KEY")
-SEARCH_ENDPOINT    = "https://fayz-search.search.windows.net"
+SEARCH_ENDPOINT    = os.getenv("AZURE_SEARCH_ENDPOINT")
 SEARCH_KEY = os.getenv("AZURE_SEARCH_KEY")
 SEARCH_INDEX       = "connectplus-rag"
 

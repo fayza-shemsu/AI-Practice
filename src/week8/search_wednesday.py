@@ -6,7 +6,7 @@ import json
 import time
 import requests
 
-SEARCH_ENDPOINT = "https://fayz-search.search.windows.net"
+SEARCH_ENDPOINT = os.getenv("AZURE_SEARCH_ENDPOINT")
 SEARCH_KEY = os.getenv("AZURE_SEARCH_KEY")
 INDEX_NAME      = "connectplus-contracts"
 API_VERSION     = "2024-07-01"

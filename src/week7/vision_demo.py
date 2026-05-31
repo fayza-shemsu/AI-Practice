@@ -10,7 +10,7 @@ from azure.core.credentials import AzureKeyCredential
 # ───────────────────────────────
 # AZURE CONFIG (PUT YOUR VALUES)
 # ───────────────────────────────
-ENDPOINT = "https://fayz-vision-service.cognitiveservices.azure.com/"
+ENDPOINT = os.getenv("AZURE_VISION_ENDPOINT")
 KEY = os.getenv("AZURE_VISION_KEY")
 
 client = ImageAnalysisClient(

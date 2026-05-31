@@ -17,7 +17,7 @@ from azure.core.credentials import AzureKeyCredential
 # ── Credentials ───────────────────────────────────────────────
 AZURE_OAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
 AZURE_OAI_KEY = os.getenv("AZURE_OPENAI_KEY")
-SEARCH_ENDPOINT    = "https://fayz-search.search.windows.net"
+SEARCH_ENDPOINT    = os.getenv("AZURE_SEARCH_ENDPOINT")
 SEARCH_KEY = os.getenv("AZURE_SEARCH_KEY")
 DEPLOY_EMBED       = "text-embedding-3-small"
 DEPLOY_GPT         = "gpt-4o"

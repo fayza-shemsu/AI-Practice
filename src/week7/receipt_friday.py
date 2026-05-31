@@ -8,7 +8,7 @@ import time
 import requests
 from PIL import Image, ImageDraw
 
-VISION_ENDPOINT = "https://fayz-vision-service.cognitiveservices.azure.com/"
+VISION_ENDPOINT = os.getenv("AZURE_VISION_ENDPOINT")
 VISION_KEY = os.getenv("AZURE_VISION_KEY")
 
 os.makedirs("./outputs/week7/friday", exist_ok=True)
