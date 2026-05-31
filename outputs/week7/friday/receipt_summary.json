@@ -1,0 +1,33 @@
+{
+  "store": "CONNECTPLUS CAFE",
+  "date": "2026-05-03",
+  "receipt_number": "00847",
+  "items": [
+    {
+      "name": "Cappuccino",
+      "price": 4.5
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 8.9
+    },
+    {
+      "name": "Orange Juice",
+      "price": 3.2
+    },
+    {
+      "name": "Chocolate Cake",
+      "price": 5.5
+    },
+    {
+      "name": "Sparkling Water",
+      "price": 2.8
+    }
+  ],
+  "item_count": 5,
+  "subtotal": 24.9,
+  "vat": 5.22,
+  "total": 30.12,
+  "payment_method": "Credit Card",
+  "currency": "EUR"
+}

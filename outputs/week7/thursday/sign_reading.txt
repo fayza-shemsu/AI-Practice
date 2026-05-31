@@ -1,0 +1,9 @@
+Image: ./outputs/week7/thursday/test_sign.jpg
+
+Lines:
+  - DANGER
+  - High Voltage Area
+  - Keep out
+  - Authorized Personel only
+
+Full text: DANGER. High Voltage Area. Keep out. Authorized Personel only

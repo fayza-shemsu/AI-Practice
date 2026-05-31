@@ -1,0 +1,18 @@
+{
+  "indexer_name": "connectplus-indexer",
+  "datasource": "connectplus-blob-datasource",
+  "skillset": "connectplus-skillset",
+  "index": "connectplus-blob-index",
+  "container": "training-forms",
+  "items_processed": 0,
+  "items_failed": 0,
+  "status": "",
+  "start_time": "",
+  "end_time": "",
+  "skills_applied": [
+    "language-detection",
+    "keyphrase-extraction",
+    "entity-recognition"
+  ],
+  "schedule": "PT24H"
+}

@@ -1,0 +1,9 @@
+Source image: https://i.imgur.com/7bMqysH.jpg
+Extracted lines:
+  - The image you are
+  - requesting does not exist
+  - or is no longer available.
+  - imgur.com
+
+Full text:
+The image you are requesting does not exist or is no longer available. imgur.com

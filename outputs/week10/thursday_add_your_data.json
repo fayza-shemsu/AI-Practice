@@ -1,0 +1,30 @@
+[
+  {
+    "question": "What is the cancellation fee if I cancel after 6 months?",
+    "answer": "If you cancel after 6 months, there is a \u00a325 early termination fee for contracts under 12 months [doc1].",
+    "tokens": 3481,
+    "latency_ms": 4276,
+    "refused": false
+  },
+  {
+    "question": "What is the maximum discount an agent can offer?",
+    "answer": "The maximum discount an agent can offer is 20% for a duration of 3 months .",
+    "tokens": 3421,
+    "latency_ms": 5668,
+    "refused": false
+  },
+  {
+    "question": "What happens if my direct debit fails three times?",
+    "answer": "If your direct debit fails three times, your account will be suspended, and a reconnection fee will apply [doc1].",
+    "tokens": 3370,
+    "latency_ms": 3187,
+    "refused": false
+  },
+  {
+    "question": "Does ConnectPlus offer 5G mobile plans?",
+    "answer": "I do not have that information. Please contact support@connectplus.co.uk",
+    "tokens": 3560,
+    "latency_ms": 2835,
+    "refused": true
+  }
+]

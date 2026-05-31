@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 venv/
 .venv/
 __pycache__/
 *.pyc
+=======
+__pycache__/
+*.pyc
+rai_model*/
+sessions/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+data/
+models/
+>>>>>>> ai1-journey

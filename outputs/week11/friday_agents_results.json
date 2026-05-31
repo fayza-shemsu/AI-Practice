@@ -1,0 +1,18 @@
+[
+  {
+    "label": "TEST 1 \u2014 Policy: agent must search",
+    "answer": "If you cancel after 8 months, you will need to pay a \u00a325 early termination fee as your contract is under 12 months. To return equipment, you must do so within 14 days of cancellation; otherwise, a \u00a375 non-return fee will be added to your final bill. A return label will be sent to you via email within 2 working days after cancellation."
+  },
+  {
+    "label": "TEST 2 \u2014 Calculation: agent must calculate",
+    "answer": "Your total cost to leave the contract today is \u00a3225, which includes \u00a3200 for the remaining monthly payments and a \u00a325 early termination fee."
+  },
+  {
+    "label": "TEST 3 \u2014 Multi-step: agent uses both tools",
+    "answer": "ConnectPlus offers three broadband plans: \n\n1. **Essential**: 35Mbps download, 5Mbps upload, \u00a325/month, no minimum term, free router.\n2. **Standard**: 67Mbps download, 15Mbps upload, \u00a335/month, 12-month contract, includes TV app.\n3. **Premium**: 150Mbps download, 30Mbps upload, \u00a350/month, 12-month contract, priority support, TV app, static IP option.\n\nUpgrading from Essential (\u00a325/month) to Premium (\u00a350/month) would cost an extra \u00a3120 per year."
+  },
+  {
+    "label": "TEST 4 \u2014 Out of scope: agent should refuse",
+    "answer": "I don't have access to live weather updates. Please check a reliable weather service for current conditions in London."
+  }
+]

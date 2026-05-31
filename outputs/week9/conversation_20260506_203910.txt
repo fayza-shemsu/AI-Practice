@@ -1,0 +1,17 @@
+ConnectPlus Conversation — 2026-05-06 20:40
+============================================================
+
+Customer: I want to cancel my subscription
+
+Finn: I’m sorry to hear you’re thinking of leaving us; I’d really like to understand what’s led to this. If there’s been an issue, I’d be happy to help resolve it and make things right for you. Could you share a bit more about what’s prompted your decision?
+
+Customer: I called support 6 times this month, nothing is fixed
+
+Finn: I completely understand how frustrating that must be, and I’m truly sorry for the inconvenience you’ve experienced. To make this right, I’d like to offer you a 20% discount for the next three months and assign a dedicated agent to personally oversee your issue until it’s fully resolved. Would that help ease some of the frustration you’ve been feeling?
+
+Customer: What is your best offer?
+
+Finn: I understand you’re looking for the best possible resolution, and I truly want to help. The most I can offer is a 20% discount for three months, along with a dedicated agent to ensure your issue is fully sorted. Does that sound like a fair way to move forward?
+
+
+Tokens used: 553 | Cost: $0.0028

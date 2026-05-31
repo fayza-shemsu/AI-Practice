@@ -1,0 +1,55 @@
+{
+  "index_name": "connectplus-contracts",
+  "document_count": 0,
+  "storage_bytes": 0,
+  "fields": [
+    {
+      "name": "id",
+      "type": "Edm.String",
+      "key": true
+    },
+    {
+      "name": "content",
+      "type": "Edm.String",
+      "searchable": true
+    },
+    {
+      "name": "title",
+      "type": "Edm.String",
+      "searchable": true
+    },
+    {
+      "name": "contract_number",
+      "type": "Edm.String",
+      "filterable": true
+    },
+    {
+      "name": "customer_name",
+      "type": "Edm.String",
+      "filterable": true
+    },
+    {
+      "name": "plan_name",
+      "type": "Edm.String",
+      "filterable": true,
+      "facetable": true
+    },
+    {
+      "name": "monthly_fee",
+      "type": "Edm.Double",
+      "sortable": true,
+      "filterable": true
+    },
+    {
+      "name": "start_date",
+      "type": "Edm.DateTimeOffset",
+      "sortable": true
+    },
+    {
+      "name": "customer_country",
+      "type": "Edm.String",
+      "filterable": true,
+      "facetable": true
+    }
+  ]
+}

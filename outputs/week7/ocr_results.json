@@ -1,0 +1,57 @@
+{
+  "plain_text": [
+    "CONNECTPLUS TELECOM",
+    "Amsterdam Central",
+    "Tel: +31-20-555-0100",
+    "Customer Invoice",
+    "Customer: Ahmed Al-Rashid",
+    "Account: CP-2024-8847",
+    "Date: 2026-05-03",
+    "SERVICES:",
+    "Monthly Plan",
+    "EUR 29.99",
+    "Extra Data 5GB",
+    "EUR",
+    "9.99",
+    "International Calls",
+    "EUR",
+    "4.50",
+    "SUBTOTAL:",
+    "EUR 44. 48",
+    "VAT (21%):",
+    "EUR 9.34",
+    "TOTAL DUE:",
+    "EUR 53.82",
+    "Payment due: 2026-05-17",
+    "IBAN: NL91ABNA0417164300",
+    "Thank you for your business!"
+  ],
+  "extracted_fields": {
+    "customer_name": "Ahmed Al-Rashid",
+    "account_number": "CP-2024-8847",
+    "invoice_date": "2026-05-03",
+    "total_amount": null,
+    "payment_due_date": "2026-05-17",
+    "iban": "NL91ABNA0417164300",
+    "line_items": [
+      {
+        "description": "",
+        "amount": "EUR 29.99"
+      },
+      {
+        "description": "",
+        "amount": "EUR 44."
+      },
+      {
+        "description": "",
+        "amount": "EUR 9.34"
+      },
+      {
+        "description": "",
+        "amount": "EUR 53.82"
+      }
+    ]
+  },
+  "total_words_found": 51,
+  "total_lines_found": 25
+}
